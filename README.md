@@ -38,3 +38,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 Se muestran las categorias disponibles del quiosco con su respectivo icono para cada uno.
 
 Listado de los productos por categoria con sus precios.
+
+Se muestran las ordenes que los clientes desean, se muestra el producto, se puede modificar la cantidad, se muestra el subtotal de cada producto, se puede eliminar algun producto que no se deseé pedir y por ultimo se muestra el total a pagar.
