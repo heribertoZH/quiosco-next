@@ -1,4 +1,4 @@
-import {string, z} from 'zod'
+import { z} from 'zod'
 
 
 
@@ -15,4 +15,10 @@ export const OrderSchema = z.object({
         subtotal: z.number()
     }))
            .min(1, 'Hay errores en la orden')
+})
+
+export const OrderIdSchema = z.object({
+       orderId: z.string()
+              .transform((value) => parseInt(value))
+              .refine(value => value > 0, {message: 'Hay errores'})
 })

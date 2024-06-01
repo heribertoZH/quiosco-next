@@ -45,3 +45,15 @@ Se muestran las ordenes que los clientes desean, se muestra el producto, se pued
 Gestión de la Orden
 Confirmación y Envío
 US6: Como usuario, quiero confirmar mi pedido y que este se envíe automáticamente a la cocina.
+
+
+-- Tercer Release--
+Procesamiento de la Orden en Cocina
+Recepción de Pedidos
+US7: Como personal de cocina, quiero ver los pedidos que han sido confirmados por los clientes para comenzar a prepararlos.
+
+Notificación y Preparación
+US8: Como personal de cocina, quiero marcar un pedido como completado y que el cliente reciba una notificación de que su orden está lista para ser recogida.
+
+Notificación al Cliente
+US9: Como usuario, quiero ver cuando mi pedido está listo para ser recogido.
