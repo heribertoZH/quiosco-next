@@ -4,12 +4,6 @@ export const dynamic = 'force-dynamic'
 
 export async function GET() {
     const orders = await prisma.order.findMany({
-        take: 5,
-        where: {
-            orderReadyAt: {
-                not: null
-            }
-        },
         orderBy: {
             orderReadyAt: 'desc'
         },
@@ -20,6 +14,8 @@ export async function GET() {
                 }
             }
         }
-    })
-    return Response.json(orders)
-}   
+    });
+    return new Response(JSON.stringify(orders), {
+        headers: { 'Content-Type': 'application/json' }
+    });
+}

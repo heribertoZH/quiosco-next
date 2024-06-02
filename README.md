@@ -57,3 +57,6 @@ US8: Como personal de cocina, quiero marcar un pedido como completado y que el c
 
 Notificación al Cliente
 US9: Como usuario, quiero ver cuando mi pedido está listo para ser recogido.
+
+-- Cuarto Release--
+En este release incorporo mi componente InProcessOrders.tsx el cual muestra a los usuarios las ordenes que se estan procesando en la ventana de ordenes listas.
