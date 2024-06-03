@@ -59,4 +59,19 @@ Notificación al Cliente
 US9: Como usuario, quiero ver cuando mi pedido está listo para ser recogido.
 
 -- Cuarto Release--
+Gestión de Productos
+CRUD de Productos
+US10:Como administrador, quiero poder crear, editar, buscar y listar productos en el sistema.
+
+Paginación
+US11: Como administrador, quiero un paginador para navegar entre las páginas de productos en el sistema.
+
 En este release incorporo mi componente InProcessOrders.tsx el cual muestra a los usuarios las ordenes que se estan procesando en la ventana de ordenes listas.
+
+--Quinto Release:
+Subida y Validación de Imágenes
+CRUD de Productos
+US12: Como desarrollador, quiero agregar validación a los formularios en el cliente y el servidor para asegurar la integridad de los datos.
+
+Paginación
+US13: Como administrador, quiero poder subir imágenes de los productos a un servidor (p. ej., Cloudinary).

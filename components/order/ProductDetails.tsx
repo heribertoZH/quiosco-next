@@ -1,5 +1,4 @@
-import { XCircleIcon, PlusIcon, MinusIcon } from '@heroicons/react/24/outline'
-
+import { XCircleIcon, PlusIcon, MinusIcon } from '@heroicons/react/24/outline'
 import { OrderItem } from "@/src/types"
 import { formatCurrency } from '@/src/utils'
 import { useStore } from '@/src/store'
@@ -13,13 +12,12 @@ const MIN_ITEMS = 1
 const MAX_ITEMS = 5
 
 export default function ProductDetails({ item }: ProductDetailsProps) {
-    
+
     const increaseQuantity = useStore((state) => state.increaseQuantity)
     const decreaseQuantity = useStore((state) => state.decreaseQuantity)
     const removeItem = useStore((state) => state.removeItem)
     const disableDecreaseButton = useMemo(() => item.quantity === MIN_ITEMS, [item])
     const disableIncreaseButton = useMemo(() => item.quantity === MAX_ITEMS, [item])
-
 
     return (
         <div className="shadow space-y-1 p-4 bg-white  border-t border-gray-200 ">
@@ -29,7 +27,8 @@ export default function ProductDetails({ item }: ProductDetailsProps) {
 
                     <button
                         type="button"
-                        onClick={() => removeItem(item.id)}                    >
+                        onClick={() => removeItem(item.id)}
+                    >
                         <XCircleIcon className="text-red-600 h-8 w-8" />
                     </button>
                 </div>
@@ -53,7 +52,7 @@ export default function ProductDetails({ item }: ProductDetailsProps) {
                     <button
                         type='button'
                         onClick={() => increaseQuantity(item.id)}
-                        className='disabled:opacity-10'
+                        className="disabled:opacity-10"
                         disabled={disableIncreaseButton}
                     >
                         <PlusIcon className="h-6 w-6" />

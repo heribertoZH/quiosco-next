@@ -1,11 +1,9 @@
 "use client"
+import "react-toastify/dist/ReactToastify.min.css"
+import { ToastContainer } from 'react-toastify'
 
-import "react-toastify/ReactToastify.min.css"
-
-import {ToastContainer} from 'react-toastify'
-
-export default function ToastNotification(){
-    return(
-        <ToastContainer />
-    )
+export default function ToastNotification() {
+  return (
+    <ToastContainer />
+  )
 }

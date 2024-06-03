@@ -8,6 +8,7 @@ type OrderCardProps = {
 
 export default function OrderCard({ order }: OrderCardProps) {
 
+ 
     return (
         <section
             aria-labelledby="summary-heading"
@@ -32,6 +33,7 @@ export default function OrderCard({ order }: OrderCardProps) {
                     <dd className="text-base font-medium text-gray-900">{formatCurrency(order.total)}</dd>
                 </div>
             </dl>
+
             <form action={completeOrder}>
                 <input 
                     type="hidden"
