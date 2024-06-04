@@ -4,7 +4,7 @@ import { toast } from 'react-toastify'
 import { useStore } from "@/src/store"
 import ProductDetails from "./ProductDetails"
 import { formatCurrency } from "@/src/utils"
-import { createOrder } from "@/actions/create-order-action"
+import { CreateOrder } from "@/actions/create-order-action"
 import { OrderSchema } from "@/src/schema"
 
 export default function OrderSummary() {
@@ -28,7 +28,7 @@ export default function OrderSummary() {
         return
       }
 
-      const response = await createOrder(data)
+      const response = await CreateOrder(data)
       if(response?.errors) {
         response.errors.forEach((issue) => {
           toast.error(issue.message)
